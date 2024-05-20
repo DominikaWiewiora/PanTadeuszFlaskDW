@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}"> 
+    <title>Sir Thaddeus</title>
+</head>
+<body>
+    <header>
+        <h1>Sir Thaddeus, or the Last Foray in Lithuania:
+            A Nobility's Tale of the Years 1811–1812,
+            in Twelve Books of Verse</h1>
+            <h2>Adam Mickiewicz</h2>
+   <div class="menu">
+        <h3>Table of contents</h3>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Main Page</a></li>
+            <li><a href="{{ url_for('k1') }}">Book 1</a></li>
+            <li><a href="{{ url_for('k2') }}">Book 2</a></li>
+            <li><a href="{{ url_for('k3') }}">Book 3</a></li>
+            <li><a href="{{ url_for('k4') }}">Book 4</a></li>
+            <li><a href="{{ url_for('k5') }}">Book 5</a></li>
+            <li><a href="{{ url_for('k6') }}">Book 6</a></li>
+            <li><a href="{{ url_for('k7') }}">Book 7</a></li>
+            <li><a href="{{ url_for('k8') }}">Book 8</a></li>
+            <li><a href="{{ url_for('k9') }}">Book 9</a></li>
+            <li><a href="{{ url_for('k10') }}">Book 10</a></li>
+            <li><a href="{{ url_for('k11') }}">Book 11</a></li>
+            <li><a href="{{ url_for('k12') }}">Book 12</a></li>
+        </ul>
+    </div>
+    </header>
+    <section>
+        {% block content %}
+        <p>
+            This is base file
+        </p>
+        {% endblock %}
+    </section>
+
+
+
+    <footer>
+       <p>Dominika Wiewióra, 231243, Uniwersytet Ekonomiczny w Krakowie</p>
+    </footer>
+</body>
+</html>
